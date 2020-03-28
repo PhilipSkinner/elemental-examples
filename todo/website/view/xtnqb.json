@@ -1,0 +1,47 @@
+{
+    "tag": "li",
+    "children": [
+        {
+            "tag": "b",
+            "text": "$.entry.title"
+        },
+        {
+            "tag": "span",
+            "text": "Done!",
+            "if": [
+                {
+                    "statement": "$.entry.completed",
+                    "logicalOperator": "and"
+                }
+            ]
+        },
+        {
+            "tag" : "span",
+            "text" : "Mark as completed",
+            "onclick" : {
+                "eventName" : "markAsCompleted",
+                "params" : {
+                    "num" : "$._index",
+                    "id" : "$.list.id"
+                }
+            },
+            "if" : [
+                {
+                    "statement" : "$.entry.completed !== true",
+                    "logicalOperator" : "and"
+                }    
+            ]
+        },
+        {
+            "tag" : "span",
+            "text" : "Remove",
+            "onclick" : {
+                "eventName" : "removeListOption",
+                "params" : {
+                    "num" : "$._index",
+                    "id" : "$.list.id"
+                }
+            }
+        }
+    ]
+}

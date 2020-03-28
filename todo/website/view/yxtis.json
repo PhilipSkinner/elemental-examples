@@ -1,0 +1,47 @@
+{
+    "tag": "html",
+    "children": [
+        {
+            "tag": "head",
+            "children": []
+        },
+        {
+            "tag": "body",
+            "children": [
+                {
+                    "tag": "div",
+                    "text": "Error: $.bag.error"
+                },
+                {
+                    "tag": "div",
+                    "repeat": "$.pet in $.bag.pets",
+                    "text": "$.pet.name"
+                },
+                {
+                    "tag": "span",
+                    "text": "Increment value : $.bag.value",
+                    "onclick": {
+                        "eventName": "increment"
+                    }
+                },
+                {
+                    "tag": "form",
+                    "submit": {
+                        "eventName": "submit"
+                    },
+                    "children": [
+                        {
+                            "tag": "input",
+                            "bind": "$.bag.name"
+                        },
+                        {
+                            "tag": "button",
+                            "type": "submit",
+                            "text": "Add pet"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

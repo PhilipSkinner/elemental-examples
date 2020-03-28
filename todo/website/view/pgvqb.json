@@ -1,0 +1,80 @@
+{
+    "tag": "article",
+    "children": [
+        {
+            "tag": "h2",
+            "text": "$.list.name",
+            "onclick": {
+                "eventName": "openList",
+                "params": {
+                    "id": "$.list.id"
+                }
+            }
+        },
+        {
+            "tag": "span",
+            "text": "Delete",
+            "onclick": {
+                "eventName": "removeList",
+                "params": {
+                    "id": "$.list.id"
+                }
+            }
+        },
+        {
+            "tag": "div",
+            "if": [
+                {
+                    "statement": "'$.list.id' === '$.bag.openList'",
+                    "logicalOperator": "and"
+                }
+            ],
+            "children": [
+                {
+                    "tag": "ul",
+                    "children": [
+                        {
+                            "tag" : "listItem",
+                            "repeat": "$.entry in $.list.entries"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "tag": "div",
+            "if": [
+                {
+                    "statement": "'$.list.id' === '$.bag.openList'",
+                    "logicalOperator": "and"
+                }
+            ],
+            "children": [
+                {
+                    "tag": "form",
+                    "submit": {
+                        "eventName": "addListOption"
+                    },
+                    "children": [
+                        {
+                            "tag": "input",
+                            "type": "hidden",
+                            "bind": "$.bag.openList"
+                        },
+                        {
+                            "tag": "label",
+                            "text": "New entry:",
+                            "for": "newEntry$.item.id"
+                        },
+                        {
+                            "id": "newEntry$.item.id",
+                            "tag": "input",
+                            "bind": "$.bag.newListItem",
+                            "autofocus": "true"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

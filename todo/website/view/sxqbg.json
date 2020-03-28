@@ -1,0 +1,29 @@
+{
+    "tag": "wrapper",
+    "title": "Example website",
+    "children": [
+        {
+            "tag": "h1",
+            "text": "My website"
+        },
+        {
+            "tag" : "p",
+            "text" : [
+                "this is some text",
+                "this is some text",
+                "this is some text",
+                "this is some text",
+                "this is some text",
+                "this is some text",
+                "this is some text",
+                "this is some text",
+                "this is some text",
+                "this is some text",
+                "this is some text",
+                "this is some text",
+                "this is some text",
+                "this is some text"
+            ]
+        }
+    ]
+}

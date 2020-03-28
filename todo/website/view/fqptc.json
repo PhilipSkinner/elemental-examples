@@ -1,0 +1,54 @@
+{
+    "tag": "header",
+    "children": [
+        {
+            "tag": "nav",
+            "children": [
+                {
+                    "tag": "span",
+                    "onclick" : {
+                        "eventName" : "hideForm"
+                    },
+                    "children": [
+                        {
+                            "tag": "img",
+                            "src": "/todo/static/logo.png"
+                        }
+                    ]
+                },
+                {
+                    "tag": "ul",
+                    "children": [
+                        {
+                            "tag": "li",
+                            "children": [
+                                {
+                                    "tag": "span",
+                                    "onclick" : {
+                                        "eventName" : "hideForm"
+                                    },
+                                    "text": "Todo Lists"
+                                }
+                            ]
+                        },
+                        {
+                            "tag": "li",
+                            "children": [
+                                {
+                                    "tag": "span",
+                                    "text": "Add List",
+                                    "onclick": {
+                                        "eventName": "showForm"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "tag": "hr"
+        }
+    ]
+}

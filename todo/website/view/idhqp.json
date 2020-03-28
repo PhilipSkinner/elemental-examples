@@ -1,0 +1,33 @@
+{
+    "tag": "html",
+    "children": [
+        {
+            "tag" : "head",
+            "children" : [
+                {
+                    "tag" : "title",
+                    "text" : "$.title"
+                }    
+            ]
+        },
+        {
+            "tag" : "body",
+            "children" : [
+                {
+                    "tag" : "header",
+                    "children" : [
+                    ]
+                },
+                {
+                    "tag" : "div",
+                    "class" : "content",
+                    "children" : "$.children"
+                },
+                {
+                    "tag" : "footer",
+                    "children" : []
+                }
+            ]
+        }
+    ]
+}

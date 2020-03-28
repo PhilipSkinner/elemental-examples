@@ -1,0 +1,44 @@
+{
+    "name": "todo",
+    "client_id": "todo-client",
+    "routes": {
+        "/": {
+            "controller": "./controllers/ygxcd.js",
+            "view": "./view/ygxcd.json",
+            "secure": true,
+            "roles": ""
+        }
+    },
+    "tags": [
+        {
+            "name": "headerSection",
+            "view": "./view/fqptc.json",
+            "controller": "./controllers/fqptc.js"
+        },
+        {
+            "name": "footerSection",
+            "view": "./view/vwpfc.json",
+            "controller": "./controllers/vwpfc.js"
+        },
+        {
+            "name": "wrapper",
+            "view": "./view/zgroz.json",
+            "controller": "./controllers/zgroz.js"
+        },
+        {
+            "name": "todoList",
+            "view": "./view/pgvqb.json",
+            "controller": "./controllers/pgvqb.js"
+        },
+        {
+            "name": "noLists",
+            "view": "./view/xetvh.json",
+            "controller": "./controllers/xetvh.js"
+        },
+        {
+            "name": "listItem",
+            "view": "./view/xtnqb.json",
+            "controller": "./controllers/xtnqb.js"
+        }
+    ]
+}
