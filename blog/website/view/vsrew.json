@@ -1,0 +1,9 @@
+{
+    "tag": "wrapper",
+    "children": [
+        {
+            "tag" : "h1",
+            "text" : "$.bag.post.title"
+        }
+    ]
+}

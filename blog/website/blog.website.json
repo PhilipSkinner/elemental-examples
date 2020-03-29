@@ -1,0 +1,51 @@
+{
+    "name": "blog",
+    "routes": {
+        "/": {
+            "controller": "./controllers/qavnz.js",
+            "view": "./view/qavnz.json"
+        },
+        "/add": {
+            "controller": "./controllers/wpdox.js",
+            "view": "./view/wpdox.json",
+            "secure": true
+        },
+        "/post/:id": {
+            "controller": "./controllers/vsrew.js",
+            "view": "./view/vsrew.json"
+        }
+    },
+    "tags": [
+        {
+            "name": "wrapper",
+            "view": "./view/ffeib.json",
+            "controller": "./controllers/ffeib.js"
+        },
+        {
+            "name": "headerSection",
+            "view": "./view/sxxzx.json",
+            "controller": "./controllers/sxxzx.js"
+        },
+        {
+            "name": "footerSection",
+            "view": "./view/syzkf.json",
+            "controller": "./controllers/syzkf.js"
+        },
+        {
+            "name": "blogPosts",
+            "view": "./view/yjbnd.json",
+            "controller": "./controllers/yjbnd.js"
+        },
+        {
+            "name": "articleDetails",
+            "view": "./view/ahsku.json",
+            "controller": "./controllers/ahsku.js"
+        },
+        {
+            "name": "inputField",
+            "view": "./view/txxmc.json",
+            "controller": "./controllers/txxmc.js"
+        }
+    ],
+    "client_id": "blog"
+}

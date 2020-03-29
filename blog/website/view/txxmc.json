@@ -1,0 +1,15 @@
+{
+    "tag": "div",
+    "children": [
+        {
+            "tag" : "label",
+            "text" : "$.label"
+        },
+        {
+            "tag" : "$.type",
+            "bind" : "$.bind",
+            "type" : "$.subType",
+            "required" : "$.required"
+        }
+    ]
+}

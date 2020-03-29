@@ -1,0 +1,45 @@
+{
+    "tag": "header",
+    "children": [
+        {
+            "tag": "nav",
+            "children": [
+                {
+                    "tag": "a",
+                    "href": "/blog",
+                    "children": [
+                        {
+                            "tag": "span",
+                            "text": "Blog"
+                        }
+                    ]
+                },
+                {
+                    "tag" : "ul",
+                    "children" : [
+                        {
+                            "tag" : "li",
+                            "children" : [
+                                {
+                                    "tag" : "a",
+                                    "href" : "/blog",
+                                    "text" : "Home"
+                                }
+                            ]
+                        },
+                        {
+                            "tag" : "li",
+                            "children" : [
+                                {
+                                    "tag" : "a",
+                                    "href" : "/blog/add",
+                                    "text" : "Add a Post"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

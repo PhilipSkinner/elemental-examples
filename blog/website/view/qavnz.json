@@ -1,0 +1,8 @@
+{
+    "tag": "wrapper",
+    "children": [
+        {
+            "tag": "blogPosts"
+        }
+    ]
+}

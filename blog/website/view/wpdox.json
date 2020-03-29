@@ -1,0 +1,64 @@
+{
+    "tag": "wrapper",
+    "children": [
+        {
+            "tag": "form",
+            "submit": {
+                "eventName": "addPost"
+            },
+            "children": [
+                {
+                    "tag" : "h3",
+                    "text" : "Post Details"
+                },
+                {
+                    "tag": "inputField",
+                    "label": "Title",
+                    "type": "input",
+                    "subType": "text",
+                    "required": true,
+                    "bind": "$.bag.title"
+                },
+                {
+                    "tag": "inputField",
+                    "label": "Blurb",
+                    "type": "textarea",
+                    "required": true,
+                    "bind": "$.bag.blurb"
+                },
+                {
+                    "tag": "inputField",
+                    "label": "Content",
+                    "type": "textarea",
+                    "required": true,
+                    "bind": "$.bag.content"
+                },
+                {
+                    "tag" : "h3",
+                    "text" : "Author"
+                },
+                {
+                    "tag" : "inputField",
+                    "label" : "Name",
+                    "type" : "input",
+                    "subType" : "text",
+                    "required" : true,
+                    "bind" : "$.bag.authorName"
+                },
+                {
+                    "tag" : "inputField",
+                    "label" : "Email",
+                    "type" : "input",
+                    "subType" : "email",
+                    "required" : true,
+                    "bind" : "$.bag.authorEmail"
+                },
+                {
+                    "tag" : "button",
+                    "type" : "submit",
+                    "text" : "Submit"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "tag": "section",
+    "children": [
+        {
+            "tag": "blockquote",
+            "if": [
+                {
+                    "statement": "$.bag.posts.length === 0",
+                    "logicalOperator": "and"
+                }
+            ],
+            "text": "There are no posts."
+        },
+        {
+            "tag": "article",
+            "repeat": "$.post in $.bag.posts",
+            "children": [
+                {
+                    "tag": "h3",
+                    "children" : [
+                        {
+                            "tag" : "a",
+                            "text": "$.post.title",
+                            "href": "/blog/post/$.post.id"        
+                        }    
+                    ]
+                }
+            ]
+        }
+    ]
+}

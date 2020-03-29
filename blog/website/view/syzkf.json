@@ -1,0 +1,9 @@
+{
+    "tag": "footer",
+    "children": [
+        {
+            "tag" : "span",
+            "text" : "&copy; 2020 Elemental Blog"
+        }    
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "client_id": "blog",
+    "client_secret": "XYnS4pmVkyV@0*5Uf3M$mkjAg$ucyixktd6fMxrLA^Ctv!EerPTa%2wH3fzg0B%jE!uDCrbhcvOa30XUMY&A2dKJxudW^hqSgVB",
+    "scope": "openid roles",
+    "redirect_uris": [
+        "http://localhost:8005/blog/_auth"
+    ]
+}
