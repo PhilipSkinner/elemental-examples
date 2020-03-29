@@ -1,0 +1,30 @@
+{
+    "tag": "html",
+    "children": [
+        {
+            "tag": "head",
+            "children": [
+                {
+                    "tag": "link",
+                    "rel": "stylesheet",
+                    "href": "/todo/static/mvp.css"
+                }
+            ]
+        },
+        {
+            "tag": "body",
+            "children": [
+                {
+                    "tag": "headerSection"
+                },
+                {
+                    "tag": "main",
+                    "children": "$.children"
+                },
+                {
+                    "tag": "footerSection"
+                }
+            ]
+        }
+    ]
+}

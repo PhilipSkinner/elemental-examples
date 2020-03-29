@@ -1,8 +1,0 @@
-{
-    "tag": "footer",
-    "children": [
-        {
-            "tag" : "hr"
-        }    
-    ]
-}

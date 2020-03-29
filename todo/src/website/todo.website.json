@@ -1,0 +1,45 @@
+{
+    "name": "todo",
+    "tagset": "",
+    "client_id": "interface-todo-client",
+    "routes": {
+        "/": {
+            "controller": "./controllers/.js",
+            "view": "./view/.json",
+            "secure": true
+        }
+    },
+    "tags": [
+        {
+            "name": "headerSection",
+            "view": "./view/yxgdb.json",
+            "controller": "./controllers/yxgdb.js"
+        },
+        {
+            "name": "footerSection",
+            "view": "./view/hlcje.json",
+            "controller": "./controllers/hlcje.js"
+        },
+        {
+            "name": "wrapper",
+            "view": "./view/qqzrd.json",
+            "controller": "./controllers/qqzrd.js"
+        },
+        {
+            "name": "todoList",
+            "view": "./view/shmsu.json",
+            "controller": "./controllers/shmsu.js"
+        },
+        {
+            "name": "noLists",
+            "view": "./view/tdszg.json",
+            "controller": "./controllers/tdszg.js"
+        },
+        {
+            "name": "listItem",
+            "view": "./view/jxvrd.json",
+            "controller": "./controllers/jxvrd.js"
+        }
+    ],
+    "errorHandlers": {}
+}

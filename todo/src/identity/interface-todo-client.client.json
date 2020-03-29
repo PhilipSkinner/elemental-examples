@@ -1,0 +1,18 @@
+{
+    "client_id": "interface-todo-client",
+    "client_secret": "bf8ca28beca088394c77c88daa942127fbe34d33843798ef422922b58fead60145a141159d32a11b48ae78719d98a8ac",
+    "scope": "openid roles offline_access",
+    "grants": [
+        "client_credentials",
+        "authorization_code",
+        "refresh_token"
+    ],
+    "redirect_uris": [
+        "http://interface.elementalsystem.org/todo/_auth"
+    ],
+    "features": {
+        "registration": {
+            "enabled": false
+        }
+    }
+}

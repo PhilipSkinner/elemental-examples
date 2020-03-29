@@ -1,0 +1,31 @@
+{
+    "tag": "section",
+    "children": [
+        {
+            "tag": "blockquote",
+            "children": [
+                {
+                    "tag": "span",
+                    "children": [
+                        {
+                            "tag": "em",
+                            "text": "You have no lists!"
+                        }
+                    ]
+                },
+                {
+                    "tag": "div",
+                    "children": [
+                        {
+                            "tag": "em",
+                            "onclick": {
+                                "eventName": "showForm"
+                            },
+                            "text": "Add a list"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

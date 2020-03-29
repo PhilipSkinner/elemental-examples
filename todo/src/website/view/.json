@@ -1,0 +1,79 @@
+{
+    "tag": "wrapper",
+    "children": [
+        {
+            "tag": "div",
+            "if": [
+                {
+                    "statement": "!$.bag.adding",
+                    "logicalOperator": "and"
+                }
+            ],
+            "children": [
+                {
+                    "tag": "noLists",
+                    "if": [
+                        {
+                            "statement": "$.bag.lists.length === 0",
+                            "logicalOperator": "and"
+                        }
+                    ]
+                },
+                {
+                    "tag": "div",
+                    "repeat": "$.list in $.bag.lists",
+                    "children": [
+                        {
+                            "tag": "todoList",
+                            "list": "$.list"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "tag": "form",
+            "if": [
+                {
+                    "statement": "$.bag.adding",
+                    "logicalOperator": "and"
+                }
+            ],
+            "submit": {
+                "eventName": "addEntry"
+            },
+            "children": [
+                {
+                    "tag": "h2",
+                    "text": "Add todo list"
+                },
+                {
+                    "tag": "p2",
+                    "text": "To add a todo list please give the list a name:"
+                },
+                {
+                    "tag": "button",
+                    "type": "submit",
+                    "text": "Add"
+                },
+                {
+                    "tag": "div",
+                    "class" : "newlist",
+                    "children": [
+                        {
+                            "tag": "label",
+                            "text": "Name:",
+                            "for": "todoListName"
+                        },
+                        {
+                            "id": "todoListName",
+                            "tag": "input",
+                            "bind": "$.bag.name",
+                            "required": "true"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,68 @@
+{
+    "tag": "footer",
+    "children": [
+        {
+            "tag": "hr"
+        },
+        {
+            "tag": "div",
+            "class": "left",
+            "text": "&copy; $(new Date().getYear() + 1900) Elemental System",
+            "onclick": {},
+            "if": []
+        },
+        {
+            "tag": "div",
+            "class": "right",
+            "children": [
+                {
+                    "tag": "a",
+                    "children": null,
+                    "text": "Elemental Documentation",
+                    "href": "https://elementalsystem.org/src/support.documentation/",
+                    "target": "_blank",
+                    "download": null,
+                    "hreflang": null,
+                    "media": null,
+                    "ping": [],
+                    "referrerpolicy": null,
+                    "type": null,
+                    "onclick": {},
+                    "if": []
+                },
+                {
+                    "tag": "a",
+                    "children": null,
+                    "text": "View on Github",
+                    "href": "https://github.com/PhilipSkinner/elemental-lowcode",
+                    "target": "_blank",
+                    "download": null,
+                    "hreflang": null,
+                    "media": null,
+                    "ping": [],
+                    "referrerpolicy": null,
+                    "rel": null,
+                    "type": null,
+                    "accesskey": null,
+                    "class": null,
+                    "contenteditable": null,
+                    "dir": null,
+                    "draggable": null,
+                    "dropzone": null,
+                    "hidden": null,
+                    "id": null,
+                    "lang": null,
+                    "spellcheck": null,
+                    "style": null,
+                    "tabindex": null,
+                    "title": null,
+                    "translate": null,
+                    "onclick": {},
+                    "if": []
+                }
+            ],
+            "onclick": {},
+            "if": []
+        }
+    ]
+}

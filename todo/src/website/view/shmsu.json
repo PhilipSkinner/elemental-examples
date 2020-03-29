@@ -1,0 +1,109 @@
+{
+    "tag": "article",
+    "children": [
+        {
+            "tag": "div",
+            "class": "options",
+            "children": [
+                {
+                    "tag": "span",
+                    "text": "Delete",
+                    "onclick": {
+                        "eventName": "removeList",
+                        "params": {
+                            "id": "$.list.id"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "tag": "div",
+            "class": "title",
+            "children": [
+                {
+                    "tag": "h2",
+                    "text": "$.list.name",
+                    "onclick": {
+                        "eventName": "openList",
+                        "params": {
+                            "id": "$.list.id"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "tag": "div",
+            "class": "entries",
+            "if": [
+                {
+                    "statement": "'$.list.id' === '$.bag.openList'",
+                    "logicalOperator": "and"
+                }
+            ],
+            "children": [
+                {
+                    "tag" : "div",
+                    "class" : "noentries",
+                    "text" : "List has no entries",
+                    "if" : [
+                        {
+                            "statement" : "$.list.entries.length === 0",
+                            "logicalOperator" : "and"
+                        }    
+                    ]
+                },
+                {
+                    "tag": "ul",
+                    "children": [
+                        {
+                            "tag": "listItem",
+                            "repeat": "$.entry in $.list.entries"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "tag": "div",
+            "if": [
+                {
+                    "statement": "'$.list.id' === '$.bag.openList'",
+                    "logicalOperator": "and"
+                }
+            ],
+            "children": [
+                {
+                    "tag": "form",
+                    "submit": {
+                        "eventName": "addListOption"
+                    },
+                    "children": [
+                        {
+                            "tag": "button",
+                            "type": "submit",
+                            "text": "Add"
+                        },
+                        {
+                            "tag": "input",
+                            "type": "hidden",
+                            "bind": "$.bag.openList"
+                        },
+                        {
+                            "tag": "label",
+                            "text": "New entry:",
+                            "for": "newEntry$.item.id"
+                        },
+                        {
+                            "id": "newEntry$.item.id",
+                            "tag": "input",
+                            "bind": "$.bag.newListItem",
+                            "autofocus": "true"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
