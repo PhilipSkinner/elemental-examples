@@ -1,0 +1,18 @@
+{
+    "tag": "wrapper",
+    "children": [
+        {
+            "tag": "article",
+            "children": [
+                {
+                    "tag": "h2",
+                    "text": "Logged out"
+                },
+                {
+                    "tag": "p",
+                    "text": "You are now logged out."
+                }
+            ]
+        }
+    ]
+}

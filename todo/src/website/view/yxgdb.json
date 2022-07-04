@@ -21,6 +21,28 @@
                     "children": [
                         {
                             "tag": "li",
+                            "if": [
+                                {
+                                    "statement": "'$.bag.isAuthenticated' === 'false'",
+                                    "logicalOperator": "and"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "tag": "a",
+                                    "href": "/todo",
+                                    "text": "Login"
+                                }
+                            ]
+                        },
+                        {
+                            "tag": "li",
+                            "if": [
+                                {
+                                    "statement": "'$.bag.isAuthenticated' === 'true'",
+                                    "logicalOperator": "and"
+                                }
+                            ],
                             "children": [
                                 {
                                     "tag": "span",
@@ -33,6 +55,12 @@
                         },
                         {
                             "tag": "li",
+                            "if": [
+                                {
+                                    "statement": "'$.bag.isAuthenticated' === 'true'",
+                                    "logicalOperator": "and"
+                                }
+                            ],
                             "children": [
                                 {
                                     "tag": "span",
@@ -45,6 +73,12 @@
                         },
                         {
                             "tag": "li",
+                            "if": [
+                                {
+                                    "statement": "'$.bag.isAuthenticated' === 'true'",
+                                    "logicalOperator": "and"
+                                }
+                            ],
                             "children": [
                                 {
                                     "tag": "span",

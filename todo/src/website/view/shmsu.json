@@ -44,14 +44,14 @@
             ],
             "children": [
                 {
-                    "tag" : "div",
-                    "class" : "noentries",
-                    "text" : "List has no entries",
-                    "if" : [
+                    "tag": "div",
+                    "class": "noentries",
+                    "text": "List has no entries",
+                    "if": [
                         {
-                            "statement" : "$.list.entries.length === 0",
-                            "logicalOperator" : "and"
-                        }    
+                            "statement": "$.list.entries.length === 0",
+                            "logicalOperator": "and"
+                        }
                     ]
                 },
                 {

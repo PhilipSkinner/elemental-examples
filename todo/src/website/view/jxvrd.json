@@ -38,7 +38,7 @@
         {
             "tag": "span",
             "text": "Done!",
-            "class" : "done",
+            "class": "done",
             "if": [
                 {
                     "statement": "$.entry.completed",

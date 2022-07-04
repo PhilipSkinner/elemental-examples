@@ -58,7 +58,7 @@
                 },
                 {
                     "tag": "div",
-                    "class" : "newlist",
+                    "class": "newlist",
                     "children": [
                         {
                             "tag": "label",
